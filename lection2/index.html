@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grow Tree Slider — Подробный гид по HTML</title>
+    <!-- Пути от index.html к файлам в папке lection1 -->
+    <link rel="stylesheet" href="libs/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="libs/swiper-bundle.min.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="swiper slider">
+        <div class="slide-ui">
+            <div class="container header-wrapper">
+                <div class="top-line"> 
+                    <div class="row">
+                        <!-- Левая колонка: Логотип -->
+                        <div class="col col--center">
+                            <a href="#" class="logo">
+                                <img src="logo/logo.png" alt="grow">
+                            </a>
+                        </div>
+                        
+                        <!-- Центральная колонка: Меню и Кнопка -->
+                        <div class="col col--lead col--menu-wrap">
+                            <nav class="main-menu">
+                                <ul>
+                                    <li class="active"><a href="#">О CSS</a></li>
+                                </ul>
+                            </nav>
+                        <a href="../bytecraft/index.html#menu" class="button">Вернуться в меню</a>
+
+
+                        </div>
+                        
+                        <!-- Правая колонка: Иконка меню (Бургер) -->
+                        <div class="col col--center">
+                            <button class="submenu">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                   <div class="header-content">
+                    <!-- Слайд 1: Что такое CSS -->
+                    <div class="header-content__slide active">
+                        <h1 class="letters">1. Что такое CSS и синтаксис</h1>
+                        <div class="header-content__info">
+                            <p>CSS — это язык стилей, который отвечает за внешний вид сайта (цвета, шрифты, отступы). Код состоит из правил. Сначала пишется селектор (что красим), а в фигурных скобках {} — свойства и значения через двоеточие.</p>
+                        </div>
+                    </div>
+
+                    <!-- Слайд 2: Способы подключения -->
+                    <div class="header-content__slide">
+                        <h1 class="letters">2. Как подключить CSS</h1>
+                        <div class="header-content__info">
+                            <p>Стили можно задать тремя способами: внутри тега через атрибут style, в голове документа в теге &lt;style&gt; или в отдельном файле style.css. Третий способ — лучший, он подключается в &lt;head&gt; через тег &lt;link rel="stylesheet" href="style.css"&gt;.</p>
+                        </div>
+                    </div>
+
+                    <!-- Слайд 3: Основные селекторы -->
+                    <div class="header-content__slide">
+                        <h1 class="letters">3. Селекторы: тег, класс, id</h1>
+                        <div class="header-content__info">
+                            <p>Селекторы находят элементы на странице. Можно выбрать все теги (например, p {}), конкретный класс через точку (.button {}) или уникальный идентификатор через решетку (#header {}). Классы используются чаще всего.</p>
+                        </div>
+                    </div>
+
+                    <!-- Слайд 4: Работа с цветом -->
+                    <div class="header-content__slide">
+                        <h1 class="letters">4. Цвет и фон</h1>
+                        <div class="header-content__info">
+                            <p>Свойство color меняет цвет текста, а background-color задает фон элемента. Цвета можно указывать словами (red), HEX-кодом (#ff0000) или в формате rgb(255, 0, 0). Для прозрачности используют rgba().</p>
+                        </div>
+                    </div>
+
+                    <!-- Слайд 5: Работа со шрифтами -->
+                    <div class="header-content__slide">
+                        <h1 class="letters">5. Шрифты и текст</h1>
+                        <div class="header-content__info">
+                            <p>Размер текста управляется свойством font-size (например, 16px). Семейство шрифта задается через font-family, а жирность — через font-weight: bold. Выровнять текст по центру можно с помощью text-align: center.</p>
+                        </div>
+                    </div>
+
+                    <!-- Слайд 6: Блочная модель -->
+                    <div class="header-content__slide">
+                        <h1 class="letters">6. Размеры и Блочная модель</h1>
+                        <div class="header-content__info">
+                            <p>Каждый элемент на странице — это прямоугольная коробка. Мы задаем ей ширину width и высоту height. Также у нее есть внутренние отступы padding (до контента) и внешние отступы margin (расстояние до соседних блоков).</p>
+                        </div>
+                    </div>
+
+                    <!-- Слайд 7: Границы и Скругления -->
+                    <div class="header-content__slide">
+                        <h1 class="letters">7. Рамки и Скругления</h1>
+                        <div class="header-content__info">
+                            <p>Свойство border создает рамку вокруг элемента, где указывается толщина, стиль и цвет (например, 2px solid black). Чтобы сделать углы круглыми или превратить квадрат в круг, используют border-radius.</p>
+                        </div>
+                    </div>
+
+                    <!-- Слайд 8: Основы Flexbox -->
+                    <div class="header-content__slide">
+                        <h1 class="letters">8. Выравнивание через Flexbox</h1>
+                        <div class="header-content__info">
+                            <p>Чтобы легко расставить элементы в ряд или по центру, родителю дают свойство display: flex. Свойство justify-content выравнивает элементы по горизонтали, а align-items — по вертикали. Это главный инструмент современной раскладки.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="header-bottom"></div>
+        </div>
+
+        <div class="swiper-wrapper">
+            <!-- Слайд 1 -->
+            <div class="swiper-slide slider__item">
+                <div class="slider__layer" data-swiper-parallax="35%" style="background-image: url(pics/pic1.png);"></div>
+                <div class="slider__layer" data-swiper-parallax="25%" style="background-image: url(pics/pic2.png);"></div>
+                <div class="slider__layer" data-swiper-parallax="14%" style="background-image: url(pics/pic3.png);"></div>
+            </div>
+
+            <!-- Слайд 2 -->
+            <div class="swiper-slide slider__item">
+                <div class="slider__layer" data-swiper-parallax="35%" style="background-image: url(pics/pic4.png);"></div>
+                <div class="slider__layer" data-swiper-parallax="25%" style="background-image: url(pics/pic5.png);"></div>
+                <div class="slider__layer" data-swiper-parallax="14%" style="background-image: url(pics/pic6.png);"></div>
+            </div>
+
+            <!-- Слайд 3 -->
+            <div class="swiper-slide slider__item">
+                <div class="slider__layer" data-swiper-parallax="35%" style="background-image: url(pics/pic7.png);"></div>
+                <div class="slider__layer" data-swiper-parallax="25%" style="background-image: url(pics/pic8.png);"></div>
+                <div class="slider__layer" data-swiper-parallax="14%" style="background-image: url(pics/pic9.png);"></div>
+            </div>
+
+            <!-- Слайд 4 -->
+            <div class="swiper-slide slider__item">
+                <div class="slider__layer" data-swiper-parallax="35%" style="background-image: url(pics/pic10.png);"></div>
+                <div class="slider__layer" data-swiper-parallax="25%" style="background-image: url(pics/pic11.png);"></div>
+                <div class="slider__layer" data-swiper-parallax="14%" style="background-image: url(pics/pic12.png);"></div>
+            </div>
+
+            <!-- Слайд 5 -->
+            <div class="swiper-slide slider__item">
+                <div class="slider__layer" data-swiper-parallax="35%" style="background-image: url(pics/pic13.png);"></div>
+                <div class="slider__layer" data-swiper-parallax="25%" style="background-image: url(pics/pic14.png);"></div>
+                <div class="slider__layer" data-swiper-parallax="14%" style="background-image: url(pics/pic15.png);"></div>
+            </div>
+             <div class="swiper-slide slider__item">
+                <div class="slider__layer" data-swiper-parallax="35%" style="background-image: url(pics/pic16.png);"></div>
+                <div class="slider__layer" data-swiper-parallax="25%" style="background-image: url(pics/pic17.png);"></div>
+                <div class="slider__layer" data-swiper-parallax="14%" style="background-image: url(pics/pic18.png);"></div>
+            </div>
+          
+             <div class="swiper-slide slider__item">
+                <div class="slider__layer" data-swiper-parallax="35%" style="background-image: url(pics/pic19.png);"></div>
+                <div class="slider__layer" data-swiper-parallax="25%" style="background-image: url(pics/pic20.png);"></div>
+                <div class="slider__layer" data-swiper-parallax="14%" style="background-image: url(pics/pic21.png);"></div>
+            </div>
+            <div class="swiper-slide slider__item">
+                <div class="slider__layer" data-swiper-parallax="35%" style="background-image: url(pics/pic22.png);"></div>
+                <div class="slider__layer" data-swiper-parallax="25%" style="background-image: url(pics/pic23.png);"></div>
+                <div class="slider__layer" data-swiper-parallax="14%" style="background-image: url(pics/pic24.png);"></div>
+            </div>
+           
+        </div>
+    </div>
+</body>
+</html>

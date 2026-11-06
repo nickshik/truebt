@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grow Tree Slider — Подробный гид по HTML</title>
+    <!-- Пути от index.html к файлам в папке lection1 -->
+    <link rel="stylesheet" href="libs/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="libs/swiper-bundle.min.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="swiper slider">
+        <div class="slide-ui">
+            <div class="container header-wrapper">
+                <div class="top-line"> 
+                    <div class="row">
+                        <!-- Левая колонка: Логотип -->
+                        <div class="col col--center">
+                            <a href="#" class="logo">
+                                <img src="logo/logo.png" alt="grow">
+                            </a>
+                        </div>
+                        
+                        <!-- Центральная колонка: Меню и Кнопка -->
+                        <div class="col col--lead col--menu-wrap">
+                            <nav class="main-menu">
+                                <ul>
+                                    <li class="active"><a href="#">О HTML</a></li>
+                                </ul>
+                            </nav>
+                        <a href="../bytecraft/index.html#menu" class="button">Вернуться в меню</a>
+
+
+                        </div>
+                        
+                        <!-- Правая колонка: Иконка меню (Бургер) -->
+                        <div class="col col--center">
+                            <button class="submenu">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                    <div class="header-content">
+                    <!-- Слайд 1: Что такое HTML -->
+                    <div class="header-content__slide active">
+                        <h1 class="letters">1. Что такое HTML и теги</h1>
+                        <div class="header-content__info">
+                            <p>HTML — это язык разметки, задающий «скелет» сайта. Весь код состоит из тегов — команд в угловых скобках. Большинство тегов парные: открывающий &lt;p&gt; включает элемент, а закрывающий &lt;/p&gt; со слэшем его выключает.</p>
+                        </div>
+                    </div>
+
+                    <!-- Слайд 2: Главный каркас документа -->
+                    <div class="header-content__slide">
+                        <h1 class="letters">2. Базовый каркас файла</h1>
+                        <div class="header-content__info">
+                            <p>Любой HTML-файл начинается со строки &lt;!DOCTYPE html&gt;, указывающей браузеру версию HTML5. Далее идет главный контейнер &lt;html lang="ru"&gt;, который обворачивает абсолютно все содержимое документа.</p>
+                        </div>
+                    </div>
+
+                    <!-- Слайд 3: Голова и Тело сайта -->
+                    <div class="header-content__slide">
+                        <h1 class="letters">3. Раздел Head и Body</h1>
+                        <div class="header-content__info">
+                            <p>Код делится на две части: &lt;head&gt; содержит невидимые служебные настройки (кодировку, заголовок вкладки &lt;title&gt;, файлы CSS), а &lt;body&gt; хранит всё, что пользователь видит на экране.</p>
+                        </div>
+                    </div>
+
+                    <!-- Слайд 4: Текст и Заголовки -->
+                    <div class="header-content__slide">
+                        <h1 class="letters">4. Работа с текстом</h1>
+                        <div class="header-content__info">
+                            <p>Заголовки задаются тегами от &lt;h1&gt; (самый главный) до &lt;h6&gt; (самый мелкий). Обычный текст оборачивают в абзацы &lt;p&gt;. Чтобы выделить слово жирным, используют &lt;strong&gt;, а для курсива — &lt;em&gt;.</p>
+                        </div>
+                    </div>
+
+                    <!-- Слайд 5: Ссылки и Картинки -->
+                    <div class="header-content__slide">
+                        <h1 class="letters">5. Ссылки и Изображения</h1>
+                        <div class="header-content__info">
+                            <p>Для создания ссылки используют тег &lt;a href="адрес"&gt;. Изображения вставляются одиночным тегом &lt;img src="путь" alt="описание"&gt;, где alt покажет текст, если картинка не загрузится.</p>
+                        </div>
+                    </div>
+
+                    <!-- Слайд 6: Списки элементов -->
+                    <div class="header-content__slide">
+                        <h1 class="letters">6. Маркированные списки</h1>
+                        <div class="header-content__info">
+                            <p>Чтобы сгруппировать пункты, создают списки: &lt;ul&gt; (список с точками) или &lt;ol&gt; (нумерованный список 1, 2, 3). Каждую строку внутри оборачивают в отдельный тег &lt;li&gt;.</p>
+                        </div>
+                    </div>
+
+                    <!-- Слайд 7: Блоки и контейнеры -->
+                    <div class="header-content__slide">
+                        <h1 class="letters">7. Контейнеры Div и Span</h1>
+                        <div class="header-content__info">
+                            <p>Тег &lt;div&gt; — это универсальная «коробка» для группировки крупных блоков страницы. Для выделения отдельного кусочка текста внутри строки используют строчный контейнер &lt;span&gt;.</p>
+                        </div>
+                    </div>
+
+                    <!-- Слайд 8: Поля ввода и Кнопки -->
+                    <div class="header-content__slide">
+                        <h1 class="letters">8. Кнопки и Ввод данных</h1>
+                        <div class="header-content__info">
+                            <p>Формы собирают данные от пользователя. Поле &lt;input type="text" placeholder="Имя"&gt; создает строку для ввода текста, а тег &lt;button&gt;Отправить&lt;/button&gt; делает кликабельную кнопку.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-bottom"></div>
+        </div>
+
+        <div class="swiper-wrapper">
+            <!-- Слайд 1 -->
+            <div class="swiper-slide slider__item">
+                <div class="slider__layer" data-swiper-parallax="35%" style="background-image: url(pics/pic1.png);"></div>
+                <div class="slider__layer" data-swiper-parallax="25%" style="background-image: url(pics/pic2.png);"></div>
+                <div class="slider__layer" data-swiper-parallax="14%" style="background-image: url(pics/pic3.png);"></div>
+            </div>
+
+            <!-- Слайд 2 -->
+            <div class="swiper-slide slider__item">
+                <div class="slider__layer" data-swiper-parallax="35%" style="background-image: url(pics/pic4.png);"></div>
+                <div class="slider__layer" data-swiper-parallax="25%" style="background-image: url(pics/pic5.png);"></div>
+                <div class="slider__layer" data-swiper-parallax="14%" style="background-image: url(pics/pic6.png);"></div>
+            </div>
+
+            <!-- Слайд 3 -->
+            <div class="swiper-slide slider__item">
+                <div class="slider__layer" data-swiper-parallax="35%" style="background-image: url(pics/pic7.png);"></div>
+                <div class="slider__layer" data-swiper-parallax="25%" style="background-image: url(pics/pic8.png);"></div>
+                <div class="slider__layer" data-swiper-parallax="14%" style="background-image: url(pics/pic9.png);"></div>
+            </div>
+
+            <!-- Слайд 4 -->
+            <div class="swiper-slide slider__item">
+                <div class="slider__layer" data-swiper-parallax="35%" style="background-image: url(pics/pic10.png);"></div>
+                <div class="slider__layer" data-swiper-parallax="25%" style="background-image: url(pics/pic11.png);"></div>
+                <div class="slider__layer" data-swiper-parallax="14%" style="background-image: url(pics/pic12.png);"></div>
+            </div>
+
+            <!-- Слайд 5 -->
+            <div class="swiper-slide slider__item">
+                <div class="slider__layer" data-swiper-parallax="35%" style="background-image: url(pics/pic13.png);"></div>
+                <div class="slider__layer" data-swiper-parallax="25%" style="background-image: url(pics/pic14.png);"></div>
+                <div class="slider__layer" data-swiper-parallax="14%" style="background-image: url(pics/pic15.png);"></div>
+            </div>
+             <div class="swiper-slide slider__item">
+                <div class="slider__layer" data-swiper-parallax="35%" style="background-image: url(pics/pic16.png);"></div>
+                <div class="slider__layer" data-swiper-parallax="25%" style="background-image: url(pics/pic17.png);"></div>
+                <div class="slider__layer" data-swiper-parallax="14%" style="background-image: url(pics/pic18.png);"></div>
+            </div>
+          
+             <div class="swiper-slide slider__item">
+                <div class="slider__layer" data-swiper-parallax="35%" style="background-image: url(pics/pic19.png);"></div>
+                <div class="slider__layer" data-swiper-parallax="25%" style="background-image: url(pics/pic20.png);"></div>
+                <div class="slider__layer" data-swiper-parallax="14%" style="background-image: url(pics/pic21.png);"></div>
+            </div>
+            <div class="swiper-slide slider__item">
+                <div class="slider__layer" data-swiper-parallax="35%" style="background-image: url(pics/pic22.png);"></div>
+                <div class="slider__layer" data-swiper-parallax="25%" style="background-image: url(pics/pic23.png);"></div>
+                <div class="slider__layer" data-swiper-parallax="14%" style="background-image: url(pics/pic24.png);"></div>
+            </div>
+           
+        </div>
+    </div>
+</body>
+</html>
